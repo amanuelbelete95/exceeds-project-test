@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
-function CheckBox({ text, checked  }) {
+function CheckBox({ text}) {
+    const [isChecked, setIsChecked] = useState(false)
   return (
     <div className="checkbox-item">
-      <input type="checkbox" checked={checked} readOnly />
+      <input type="checkbox" checked={isChecked} onChange={() => setIsChecked(true)} readOnly />
       <span>{text}</span>
     </div>
   );

@@ -6,7 +6,7 @@ function CheckBoxContainer() {
   return (
     <div>
         {
-            arr.map((item, index) => <CheckBox item={item} checked={index === 4 ? true : false}/>)
+            arr.map((item, index) => <CheckBox item={item}/>)
         }
     </div>
   )
