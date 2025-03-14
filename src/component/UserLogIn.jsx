@@ -49,11 +49,11 @@ function UserLogIn() {
 
   return (
     <div className="login-container">
-      <form onSubmit={handleSubmit} className="login-form">
+      <form onSubmit={handleSubmit} className="login-form" style={{padding: "40px"}}>
         <h2>Login</h2>
 
         {/* Username Field */}
-        <div className="input-group">
+        <div className="input-group" style={{marginBottom: "20px"}}>
           <label htmlFor="username">Username</label>
           <input
             type="text"
@@ -67,7 +67,7 @@ function UserLogIn() {
         </div>
 
         {/* Password Field */}
-        <div className="input-group">
+        <div className="input-group" style={{marginBottom: "20px"}}>
           <label htmlFor="password">Password</label>
           <input
             type="password"
